@@ -32,7 +32,7 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Aapka frontend URL
+  origin: process.env.Client_URL || 'http://localhost:5173', // Aapka frontend URL
   credentials: true
 }));
 
